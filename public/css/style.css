@@ -1,0 +1,456 @@
+:root {
+  --primary: #0bbd67;
+  --secondary: #f3dc1e;
+  --ketiga: #f49a1f;
+  --bg: #ffffff;
+  --abu: #f7f9f6;
+  --bahan: #8d8d8d;
+  --abu2: #ababab;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  /* min-height: 2000px; */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--primary);
+}
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  margin: 0 2rem;
+  font-size: 16px;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+  font-weight: 600;
+}
+/* .navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  padding-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+} */
+
+.navbar .navbar-extra a {
+  color: black;
+  margin: 0 1rem;
+}
+.navbar .navbar-extra i {
+  font-size: 30px;
+}
+.about .row {
+  flex-wrap: wrap;
+}
+.about .row .content {
+  object-position: center;
+}
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+#menu {
+  display: none;
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: last baseline;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255) 8%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+.hero .content {
+  padding: 4rem 5%;
+  max-width: 60rem;
+}
+.hero .content h1 {
+  font-size: 55px;
+  color: var(--primary);
+  text-shadow: 1px 1px 3px var(--primary) 0.5;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.hero .content h2 {
+  font-size: 30px;
+  color: var(--primary);
+  font-weight: 600;
+}
+.hero .content .CTA {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: var(--secondary);
+  border-radius: 50px;
+  box-shadow: 1px 1px 3px rgba(243, 220, 30, 0.5);
+}
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .header .search {
+    width: 0;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* about */
+.about {
+  padding: 5rem 5% 1.4rem;
+}
+.about h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--primary);
+}
+.about h3 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+  color: var(--primary);
+}
+.about .row {
+  display: block;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.about .row .about-img {
+  display: flex;
+  justify-content: center;
+}
+.about .row .about-img img {
+  width: 450px;
+  margin-bottom: 1.4rem;
+}
+.about .row .content {
+  display: flex;
+  width: 600px;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  color: #0bbd67;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 3rem;
+}
+/* misi */
+.misi {
+  background-color: var(--primary);
+  position: relative;
+  display: flex;
+}
+.misi .image .visiimg img {
+  top: 60px;
+  width: 650px;
+  position: absolute;
+  margin-left: 10%;
+}
+.misi .image .visiimg3 img {
+  width: 125px;
+  height: 300px;
+  margin-left: 580px;
+}
+.misi .image .visiimg2 img {
+  width: 125px;
+  height: 300px;
+  margin-left: 230px;
+  bottom: 0;
+}
+.misi .row h2 {
+  padding: 15rem 7% 1.4rem;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  font-size: 45px;
+  font-weight: 600;
+  color: var(--bg);
+}
+.misi .row .vscontent p {
+  margin-left: 70px;
+  line-height: 25px;
+  height: 150px;
+  width: 450px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--bg);
+}
+.wrapper {
+  background: transparent;
+  padding: 10rem 7% 10rem;
+}
+.wrapper h2 {
+  text-align: center;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+.wrapper .ulsn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .ulsn .ulasan {
+  border: 2px solid var(--primary);
+  border-radius: 25px;
+  width: 354px;
+  height: 235px;
+}
+.wrapper .ulsn .ulasan h3 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.wrapper .ulsn .ulasan h4 {
+  text-align: center;
+  font-weight: 400;
+  color: #ababab;
+}
+.wrapper .ulsn .ulasan p {
+  text-align: center;
+  padding: 0px 15px;
+  margin-top: 60px;
+}
+
+.header {
+  background-color: var(--primary);
+  height: 300px;
+  padding: 7rem 7% 10rem;
+}
+/* search */
+.header h2 {
+  text-align: center;
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 35px;
+}
+.header .search {
+  background-color: transparent;
+  border: 1px solid var(--bg);
+  border-radius: 30px;
+  color: var(--bg);
+  display: flex;
+  width: 750px;
+  margin: auto;
+}
+.header .search input {
+  margin-left: 25px;
+  font-size: medium;
+  color: var(--bg);
+  background: transparent;
+}
+.header .search label {
+  margin-top: 5px;
+  cursor: pointer;
+  color: var(--bg);
+  margin-left: 20px;
+}
+.header .search input::placeholder {
+  color: var(--bg);
+  font-family: "Poppins", sans-serif;
+}
+/* produk */
+.produk {
+  padding: 1rem 7% 10rem;
+}
+.produk .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: flex-start;
+  gap: 4rem;
+}
+.produk .row .produk-card {
+  border: 1px solid var(--abu);
+  width: 245px;
+  height: 400px;
+  border-radius: 10px;
+}
+.produk .row .produk-card img {
+  width: 225px;
+  margin: 8px 5px 5px 8px;
+}
+.produk .row .produk-card-title {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 12px;
+}
+.produk .row .produk-card-bahan {
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 12px;
+  color: var(--bahan);
+  margin-right: 9px;
+  margin-bottom: 1px;
+}
+.produk .row .produk-card-harga {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 12px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.produk .row .produk-card .produk-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.produk .row .produk-card .produk-icon .star {
+  color: var(--secondary);
+  margin-left: 12px;
+  font-size: 22px;
+  fill: var(--secondary);
+}
+.produk .row .produk-card .produk-icon .star-full {
+  fill: var(--secondary);
+}
+
+.produk .row .produk-card .produk-icon a {
+  margin-right: 8px;
+  color: var(--primary);
+  margin-right: 15px;
+  font-size: 25px;
+}
+.produk .icontp {
+  font-size: 80px;
+  float: right;
+}
+
+/* tambah produk */
+.tambahproduk {
+  padding: 7%;
+}
+.tambahproduk .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  gap: 4rem;
+}
+.tambahproduk .row .form-card {
+  border: 1px solid var(--bg);
+  width: 450px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 25px;
+  background: rgba(255, 255, 255 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.tambahproduk .row .form-card input {
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 400;
+  padding-left: 15px;
+}
+.tambahproduk .row .form-card textarea {
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 400;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.tambahproduk .row .form-card button {
+  height: 35px;
+  width: 150px;
+  border-radius: 5px;
+  background: var(--primary);
+  font-family: "Poppins", sans-serif;
+  color: var(--bg);
+  font-weight: 500;
+  float: right;
+}
+.tambahproduk .row .img-card {
+  border: 1px solid var(--primary);
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
+}
+footer {
+  border-top: 1px solid var(--primary);
+  background-color: var(--bg);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+footer .social {
+  padding: 1rem 0;
+}
+footer .social a {
+  color: black;
+  margin: 1rem;
+}
+footer .social a:hover {
+  color: var(--primary);
+}
