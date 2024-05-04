@@ -34,7 +34,7 @@
     <div class="row">
         <h2>Visi Kami</h2>
         <div class="vscontent">
-            <p>Prepify.id menawarkan solusi praktis untuk siapa saja yang ingin menikmati makanan sehat tanpa repot. Kami spesialis dalam menyediakan paket sayuran siap masak untuk memudahkan proses memasak Anda dan memastikan Anda mendapatkan asupan gizi maksimal dari setiap hidangan.</p>
+            <p>Prepify.id menawarkan solusi praktis untuk siapa saja yang ingin menikmati makanan sehat tanpa repot. Kami spesialis dalam menyediakan paket sayuran siap masak untuk memudahkan proses memasak Anda dan memastikan Anda mendapatkan asupan gizi maksimal dari setiap hidangan X.</p>
 
         </div>
     </div>
