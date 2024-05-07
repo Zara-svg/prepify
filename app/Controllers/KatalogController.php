@@ -1,17 +1,20 @@
 <?php
+
 namespace App\Controllers;
 
 use App\Models\KatalogModel;
 use Codeigniter\Controller;
+
 class KatalogController extends BaseController
-{   
+{
     private $KatalogModel;
-    public function __construct(){
+    public function __construct()
+    {
         $this->KatalogModel = new KatalogModel();
     }
     public function katalog()
     {
-        $katalog= $this->KatalogModel->findAll();
+        $katalog = $this->KatalogModel->findAll();
 
         $data = [
             'title' => 'Katalog | Prepify.id',
@@ -22,33 +25,35 @@ class KatalogController extends BaseController
         // echo"katalog page";
     }
 
-    public function create(){
-        $data=[
-            'title'=> 'Tambah Produk | Prepify.id'
+    public function create()
+    {
+        $data = [
+            'title' => 'Tambah Produk | Prepify.id'
         ];
         return view('tambah_produk', $data);
     }
-    public function store(){
-        $data=$this->request->getPost();
+    public function store()
+    {
+        $data = $this->request->getPost();
         $this->KatalogModel->save($data);
         return redirect()->to('/katalog');
     }
 
-    public function edit($id){
+    public function edit($id)
+    {
         $data['katalog'] = $this->KatalogModel->find($id);
         return view('/edit_produk', $data);
     }
-    public function update($id){
+    public function update($id)
+    {
         $data = $this->request->getPost();
         $this->KatalogModel->update($id, $data);
         return redirect()->to('/katalog');
     }
 
-    public function delete($id){
+    public function delete($id)
+    {
         $this->KatalogModel->delete($id);
         return redirect()->to('/katalog');
     }
 }
-
-
-
