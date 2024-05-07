@@ -9,6 +9,6 @@ class KatalogModel extends Model
     protected $table='katalog';
     protected $primaryKey='id';
     protected $useAutoIncrement= true;
-    protected $allowedFields= ['namaproduk', 'bahan', 'harga','gambar'];
+    protected $allowedFields= ['id', 'namaproduk', 'bahan', 'harga','gambar'];
     
 }

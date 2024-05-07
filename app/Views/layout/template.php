@@ -33,7 +33,7 @@
         </div>
 
         <div class="navbar-extra">
-            <a href="#" id="chart"><i class='bx bxs-basket'></i></a>
+            <a href="#" id="shopping-cart-button"><i class='bx bxs-basket'></i></a>
             <a href="#" id="user"><i class='bx bx-user-circle'></i></a>
             <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
@@ -45,19 +45,23 @@
 
     <!-- Footer start -->
     <footer>
+        <a href="<?= base_url() ?>" class="back">Prepify.id</a>
         <div class="social">
             <a href="#"><i data-feather="instagram"></i></a>
             <a href="#"><i data-feather="facebook"></i></a>
             <a href="#"><i data-feather="twitter"></i></a>
         </div>
-        <div class="link">
-
-        </div>
+        <!-- <div class="link">
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">Twitter</a>
+        </div> -->
         <div class="credit">
+            <h3>Cook Your Own Meal!</h3>
             <p>Created by <a href="">Nurkhalifah Azzahra</a>. | &copy; 2024</p>
         </div>
     </footer>
-    <!-- Footer start -->
+    <!-- Footer end -->
     <script>
         feather.replace();
     </script>

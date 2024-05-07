@@ -22,22 +22,43 @@
                 <h4 class="produk-card-harga"><?php echo $post['harga'] ?></h4>
                 <div class="produk-icon">
                     <div class="star">
-                        <i data-feather="star" class="star-full"></i>
-                        <i data-feather="star"></i>
-                        <i data-feather="star"></i>
-                        <i data-feather="star"></i>
-                        <i data-feather="star"></i>
+                        <i class="stars" class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
                     </div>
                     <a href=""><i class='bx bxs-basket' style='color:#0bbd67'></i></a>
+                    <a href="<?= site_url('/edit_produk' . $post['id']) ?>"> <i class='bx bxs-edit-alt' style='color:#0bbd67'></i></a>
+                    <a href="<?= site_url('/delete_produk' . $post['id']) ?>"> <i class='bx bx-trash' style='color:#0bbd67'></i></a>
                 </div>
             </div>
         <?php endforeach ?>
     </div>
     <a href="/tambah_produk" class="icontp"><i class='bx bx-plus-circle' style='color:#0bbd67'></i></a>
 </section>
-
 <!-- katalog end -->
 
+<!-- shopping-cart start -->
+<div class="shopping-cart">
+    <div class="cart-item">
+        <img src="img/ayam kecap.png" alt="Product 1">
+        <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">Rp15.000</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+    </div>
+    <div class="cart-item">
+        <img src="img/ayam kecap.png" alt="Product 1">
+        <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">Rp15.000</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+    </div>
+</div>
+<!-- shopping-cart end -->
 
 
 <?= $this->endSection(); ?>

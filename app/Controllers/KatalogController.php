@@ -33,6 +33,22 @@ class KatalogController extends BaseController
         $this->KatalogModel->save($data);
         return redirect()->to('/katalog');
     }
+
+    public function edit($id){
+        $data['katalog'] = $this->KatalogModel->find($id);
+        return view('/edit_produk', $data);
+    }
+    public function update($id){
+        $data = $this->request->getPost();
+        $this->KatalogModel->update($id, $data);
+        return redirect()->to('/katalog');
+    }
+
+    public function delete($id){
+        $this->KatalogModel->delete($id);
+        return redirect()->to('/katalog');
+    }
 }
+
 
 
