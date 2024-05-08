@@ -1,4 +1,4 @@
-<?= $this->extend('layout/template'); ?>
+<?= $this->extend('layout/headerfooter'); ?>
 
 <?= $this->section('content'); ?>
 <!-- landing page -->

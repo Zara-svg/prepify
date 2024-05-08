@@ -41,19 +41,25 @@ class KatalogController extends BaseController
 
     public function edit($id)
     {
-        $data['katalog'] = $this->KatalogModel->find($id);
-        return view('/edit_produk', $data);
+        $katalog = $this->KatalogModel->find($id); 
+        $data = [
+            'title' => 'Edit Produk | Prepify.id',
+            'katalog' => $katalog
+        ];
+        return view('edit_produk', $data);
     }
+
     public function update($id)
     {
-        $data = $this->request->getPost($id);
+        $data = $this->request->getPost();
         $this->KatalogModel->update($id, $data);
         return redirect()->to('/katalog');
     }
-
     public function delete($id)
     {
-        $this->KatalogModel->delete($id);
+        $this->KatalogModel->delete($id);  // DELETE FROM berita WHERE id=$id  
         return redirect()->to('/katalog');
     }
+
+
 }
