@@ -46,7 +46,7 @@ class KatalogController extends BaseController
     }
     public function update($id)
     {
-        $data = $this->request->getPost();
+        $data = $this->request->getPost($id);
         $this->KatalogModel->update($id, $data);
         return redirect()->to('/katalog');
     }
