@@ -1,6 +1,6 @@
-<?= $this->extend('layout/headerfooter'); ?>
+<?= $this->extend('layout/headerfooter'); ?> //memanggil file navbar dan footer
 
-<?= $this->section('content'); ?>
+<?= $this->section('content'); ?> //memulai code untuk halaman katalog
 
 <!-- katalog start -->
 <section class="header" id="header">
@@ -39,26 +39,6 @@
 </section>
 <!-- katalog end -->
 
-<!-- shopping-cart start -->
-<div class="shopping-cart">
-    <div class="cart-item">
-        <img src="img/ayam kecap.png" alt="Product 1">
-        <div class="item-detail">
-            <h3>Product 1</h3>
-            <div class="item-price">Rp15.000</div>
-        </div>
-        <a href=" "><i data-feather=" trash-2" class="remove-item"></i></a>
-    </div>
-    <div class="cart-item">
-        <img src="img/ayam kecap.png" alt="Product 1">
-        <div class="item-detail">
-            <h3>Product 1</h3>
-            <div class="item-price">Rp15.000</div>
-        </div>
-        <i data-feather="trash-2" class="remove-item"></i>
-    </div>
-</div>
-<!-- shopping-cart end -->
 
 
 <?= $this->endSection(); ?>

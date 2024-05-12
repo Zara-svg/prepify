@@ -1,7 +1,7 @@
-<?= $this->extend('layout/headerfooter'); ?>
+<?= $this->extend('layout/headerfooter'); ?> //multiple view ke file navbar dan footer
 
 <?= $this->section('content'); ?>
-<!-- landing page -->
+<!-- landing page-->
 <section class="hero" id="beranda">
     <main class="content">
         <h1>Prepify.id</h1>
@@ -76,5 +76,3 @@
 </section>
 <?= $this->endSection(); ?>
 <!-- ulasan -->
-
-<!-- icons -->
