@@ -12,7 +12,6 @@
                 <button type="submit">Tambah</button>
             </div>
         </form>
-
     </div>
 </section>
 
