@@ -1,6 +1,6 @@
-<?= $this->extend('layout/headerfooter'); ?> //memanggil file navbar dan footer
+<?= $this->extend('layout/headerfooter'); ?>
 
-<?= $this->section('content'); ?> //memulai code untuk halaman katalog
+<?= $this->section('content'); ?>
 
 <!-- katalog start -->
 <section class="header" id="header">

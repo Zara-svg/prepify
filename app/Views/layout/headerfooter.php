@@ -23,18 +23,17 @@
 <body>
     <!-- navbar start -->
     <nav class="navbar">
-        <a href="<?= base_url() ?>" class="navbar-logo">Prepify.id</a> //logo, supaya jika diklik akan kembali ke halaman atas page
-
+        <a href="<?= base_url() ?>" class="navbar-logo">Prepify.id</a>
         <div class="navbar-nav">
-            <a href="<?= base_url() ?>">Beranda</a> //untuk mengarahkan ke halaman beranda
-            <a href="<?= base_url('katalog') ?>">Katalog</a> //untuk mengarahkan ke halaman katalog
-            <a href="<?= base_url('ulasan') ?>">Ulasan</a> //untuk mengarahkan ke halaman ulasan
+            <a href="<?= base_url() ?>">Beranda</a>
+            <a href="<?= base_url('katalog') ?>">Katalog</a>
+            <a href="<?= base_url('ulasan') ?>">Ulasan</a>
             <a href=""></a>
         </div>
 
         <div class="navbar-extra">
-            <a href="#" id="shopping-cart-button"><i class='bx bxs-basket'></i></a> //memunculkan ikon keranjang
-            <a href="#" id="user"><i class='bx bx-user-circle'></i></a> //memunculkan ikon user
+            <a href="#" id="shopping-cart-button"><i class='bx bxs-basket'></i></a>
+            <a href="#" id="user"><i class='bx bx-user-circle'></i></a>
             <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
     </nav>
@@ -45,18 +44,18 @@
 
     <!-- Footer start -->
     <footer>
-        <a href="<?= base_url() ?>" class="back">Prepify.id</a> //logo, supaya jika diklik akan kembali ke halaman atas page
+        <a href="<?= base_url() ?>" class="back">Prepify.id</a>
         <div class="social">
-            <a href="#"><i data-feather="instagram"></i></a> //link sosmed
-            <a href="#"><i data-feather="facebook"></i></a> //link sosmed
-            <a href="#"><i data-feather="twitter"></i></a> //link sosmed
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
         </div>
         <!-- <div class="link">
             <a href="#">Instagram</a>
             <a href="#">WhatsApp</a>
             <a href="#">Twitter</a>
         </div> -->
-        <div class="credit"> //credit pembuat website
+        <div class="credit">
             <h3>Cook Your Own Meal!</h3>
             <p>Created by <a href="">Nurkhalifah Azzahra</a>. | &copy; 2024</p>
         </div>

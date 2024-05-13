@@ -1,4 +1,4 @@
-<?= $this->extend('layout/headerfooter'); ?> //multiple view ke file navbar dan footer
+<?= $this->extend('layout/headerfooter'); ?> 
 
 <?= $this->section('content'); ?>
 <!-- landing page-->
