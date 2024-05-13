@@ -58,6 +58,7 @@ class KatalogController extends BaseController
     public function delete($id)
     {
         $this->KatalogModel->delete($id);  // DELETE FROM berita WHERE id=$id  
+        session()->setFlashdata('pesan','Produk berhasil dihapus');
         return redirect()->to('/katalog');
     }
 

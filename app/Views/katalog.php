@@ -30,7 +30,9 @@
                     </div>
                     <a href=""><i class='bx bxs-basket' style='color:#0bbd67'></i></a>
                     <a href="<?= site_url('edit_produk/' . $post['id']) ?>"> <i class='bx bxs-edit-alt' style='color:#0bbd67'></i></a>
-                    <a href="<?= site_url('delete_produk/' . $post['id']) ?>"> <i class='bx bx-trash' style='color:#0bbd67'></i></a>
+                    <a href="<?= site_url('delete_produk/' . $post['id']) ?>" onclick="return confirm('Apakah anda yakin ingin menghapus produk ini?'); ">
+                    <i class='bx bx-trash' style='color:#0bbd67'></i>
+                    </a>
                 </div>
             </div>
         <?php endforeach ?>
